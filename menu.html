@@ -14,7 +14,7 @@
             <a class="navbar-brand" href="index.html">Tartiflutte</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>          
+            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -73,65 +73,234 @@
             </nav>
 
             <section class="container" id="container_Entree">
-            </section>
-
-            <section class="container" id="container_Plats">
                 <p class="d-inline-flex gap-1">
-                    <button class="btn btn-primary" type="button" id="All_btn">Tout voir</button>
-                    <button class="btn btn-primary" type="button" id="Poisson_btn">Poissons</button>
-                    <button class="btn btn-primary" type="button" id="Viande_btn">Viandes</button>
-                    <button class="btn btn-primary" type="button" id="Veggie_btn">Végétariens</button>
+                    <button class="btn btn-primary" type="button" id="Entree_All_btn">Tout voir</button>
+                    <button class="btn btn-primary" type="button" id="Entree_Viande_btn">Viandes</button>
+                    <button class="btn btn-primary" type="button" id="Entree_Veggie_btn">Végétariens</button>
                 </p>
                   <div class="row">
-                    <div class="col-md-6 col-lg-4 mb-4 card-container">
-                        <div class="collapse multi-collapse show" id="Poisson_1">
-                            <div class="card card-body">
-                                CARD de Poisson
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-4 card-container">
-                        <div class="collapse multi-collapse show" id="Poisson_2">
-                            <div class="card card-body">
-                                CARD de Poisson 2
+                    <div class="col-md-6 col-lg-4 mb-4 card-container"">
+                        <div class="collapse multi-collapse show" id="Entree_viande_1">
+                            <div class="card">
+                                <img src="img/escargot.webp" class="card-img-top" alt="...">
+                                <div class="card card-body">
+                                   <h4 class="card-text"> Escargot au Beurre Persillé</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 mb-4 card-container"">
-                        <div class="collapse multi-collapse show" id="Viande_1">
-                            <div class="card card-body">
-                                CARD de viande
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-4 card-container">
-                        <div class="collapse multi-collapse show" id="Viande_2">
-                            <div class="card card-body">
-                            CARD de viande 2
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-4 card-container"">
-                        <div class="collapse multi-collapse show" id="Veggie_1">
-                            <div class="card card-body">
-                                CARD de veggie 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-4 card-container">
-                        <div class="collapse multi-collapse show" id="Veggie_2">
-                            <div class="card card-body">
-                            CARD de veggie 2
+                        <div class="collapse multi-collapse show" id="Entree_veggie_1">
+                            <div class="card">
+                                <img src="img/soupe_miso.jpg" class="card-img-top" alt="...">
+                                <div class="card card-body">
+                                   <h4 class="card-text">Soupe Miso</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
                   </div>
             </section>
 
-            <section class="container" id="container_Dessert">
+            <section class="container d-none" id="container_Plats">
+                <p class="d-inline-flex gap-1">
+                    <button class="btn btn-primary" type="button" id="Plat_All_btn">Tout voir</button>
+                    <button class="btn btn-primary" type="button" id="Plat_Poisson_btn">Poissons</button>
+                    <button class="btn btn-primary" type="button" id="Plat_Viande_btn">Viandes</button>
+                    <button class="btn btn-primary" type="button" id="Plat_Veggie_btn">Végétariens</button>
+                </p>
+                  <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-4 card-container">
+                        <div class="collapse multi-collapse show" id="Plat_poisson_1">
+                            <div class="card">
+                                <img src="img/filet de bar.webp" class="card-img-top" alt="...">
+                                <div class="card card-body">
+                                   <h4 class="card-title">Filet de Bar  en Marinade de Citron</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 card-container">
+                        <div class="collapse multi-collapse show" id="Plat_viande_1">
+                            <div class="card">
+                                <img src="img/tartiflette.jpg" class="card-img-top" alt="...">
+                                <div class="card card-body">
+                                   <h4 class="card-text">Tartiflette au Reblochon</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 card-container">
+                        <div class="collapse multi-collapse show" id="Plat_veggie_1">
+                            <div class="card">
+                                <img src="img/ramen veggie.jpg" class="card-img-top" alt="...">
+                                <div class="card card-body">
+                                   <h4 class="card-text">Ramen Végétariens</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 card-container">
+                        <div class="collapse multi-collapse show" id="Plat_viande_2">
+                            <div class="card">
+                                <img src="img/magret de canard.jpg" class="card-img-top" alt="...">
+                                <div class="card card-body">
+                                   <h4 class="card-text">Magret de Canard à l'Orange</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 card-container">
+                        <div class="collapse multi-collapse show" id="Plat_poisson_2">
+                            <div class="card">
+                                <img src="img/fish-and-chips.jpg" class="card-img-top" alt="...">
+                                <div class="card card-body">
+                                   <h4 class="card-text">Fish and Chips traditionnel</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 card-container">
+                        <div class="collapse multi-collapse show" id="Plat_veggie_2">
+                            <div class="card">
+                                <img src="img/falafel.jpg" class="card-img-top" alt="...">
+                                <div class="card card-body">
+                                   <h4 class="card-text">Falafel</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
             </section>
 
-            <section class="container" id="container_Boissons">
+            <section class="container d-none" id="container_Dessert">
+                <p class="d-inline-flex gap-1">
+                    <button class="btn btn-primary" type="button" id="Dessert_All_btn">Tout voir</button>
+                    <button class="btn btn-primary" type="button" id="Dessert_sucre_btn">Sucrerie</button>
+                    <button class="btn btn-primary" type="button" id="Dessert_fromage_btn">Fromage</button>
+                </p>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-4 card-container">
+                        <div class="collapse multi-collapse show" id="Dessert_sucre_1">
+                            <div class="card">
+                                <img src="img/tarte-citron-1.png" class="card-img-top" alt="...">
+                                <div class="card card-body">
+                                   <h4 class="card-text">Tarte au Citron Meringuée</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 card-container">
+                        <div class="collapse multi-collapse show" id="Dessert_sucre_2">
+                            <div class="card">
+                                <img src="img/profiteroles.jpeg" class="card-img-top" alt="...">
+                                <div class="card card-body">
+                                   <h4 class="card-text">profiteroles</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 card-container">
+                        <div class="collapse multi-collapse show" id="Dessert_fromage_1">
+                            <div class="card">
+                                <img src="img/assiette_fromage&fruits.jpg" class="card-img-top" alt="...">
+                                <div class="card card-body">
+                                   <h4 class="card-text">Assiette de Fromage</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 card-container">
+                        <div class="collapse multi-collapse show" id="Dessert_sucre_3">
+                            <div class="card">
+                                <img src="img/fondant au choco.jpg" class="card-img-top" alt="...">
+                                <div class="card card-body">
+                                   <h4 class="card-text">Fondant au Chocolat</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 card-container">
+                        <div class="collapse multi-collapse show" id="Dessert_sucre_4">
+                            <div class="card">
+                                <img src="img/banana split.avif" class="card-img-top" alt="...">
+                                <div class="card card-body">
+                                   <h4 class="card-text">Banana Split</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container d-none" id="container_Boissons">
+                <p class="d-inline-flex gap-1">
+                    <button class="btn btn-primary" type="button" id="Boisson_All_btn">Tout voir</button>
+                    <button class="btn btn-primary" type="button" id="Boisson_sobre_btn">Sans Alcool</button>
+                    <button class="btn btn-primary" type="button" id="Boisson_alcool_btn">Alcoolisé</button>
+                </p>
+                  <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-4 card-container">
+                        <div class="collapse multi-collapse show" id="Boisson_sobre_1">
+                            <div class="card">
+                                <img src="img/glogi.jpeg" class="card-img-top" alt="...">
+                                <div class="card card-body">
+                                   <h4 class="card-text">Glogi</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 card-container">
+                        <div class="collapse multi-collapse show" id="Boisson_sobre_2">
+                            <div class="card">
+                                <img src="img/diabolo.webp" class="card-img-top" alt="...">
+                                <div class="card card-body">
+                                   <h4 class="card-text">Diabolo</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 card-container">
+                        <div class="collapse multi-collapse show" id="Boisson_alcool_1">
+                            <div class="card">
+                                <img src="img/mojito.webp" class="card-img-top" alt="...">
+                                <div class="card card-body">
+                                   <h4 class="card-text">Mojito</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 card-container">
+                        <div class="collapse multi-collapse show" id="Boisson_alcool_2">
+                            <div class="card">
+                                <img src="img/chateau neuf du pape.jpg" class="card-img-top" alt="...">
+                                <div class="card card-body">
+                                   <h4 class="card-text">Château Neuf du Pape 2021</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 card-container">
+                        <div class="collapse multi-collapse show" id="Boisson_sobre_3">
+                            <div class="card">
+                                <img src="img/jus de fruit.jpeg" class="card-img-top" alt="...">
+                                <div class="card card-body">
+                                   <h4 class="card-text">Jus de Fruits</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 card-container">
+                        <div class="collapse multi-collapse show" id="Boisson_alcool_3">
+                            <div class="card">
+                                <img src="img/pommery-champagne-brut-royal.jpg" class="card-img-top" alt="...">
+                                <div class="card card-body">
+                                   <h4 class="card-text">Champagne Brut</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
             </section>
         </section>
     </main>

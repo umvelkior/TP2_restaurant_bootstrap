@@ -1,211 +1,80 @@
-document.getElementById('Poisson_btn').addEventListener('click', function() {
-    var viandeCollapseElement = document.getElementById('Viande_1');
-    if (viandeCollapseElement.classList.contains('show')) {
-        var viandeCollapse = new bootstrap.Collapse(viandeCollapseElement, {
-            toggle: false
-        });
-        viandeCollapse.hide();
-    }
-    var viande2CollapseElement = document.getElementById('Viande_2');
-    if (viande2CollapseElement.classList.contains('show')) {
-        var viande2Collapse = new bootstrap.Collapse(viande2CollapseElement, {
-            toggle: false
-        });
-        viande2Collapse.hide();
-    }
-
-
-
-    var veggieCollapseElement = document.getElementById('Veggie_1');
-    if (veggieCollapseElement.classList.contains('show')) {
-        var veggieCollapse = new bootstrap.Collapse(veggieCollapseElement, {
-            toggle: false
-        });
-        veggieCollapse.hide();
-    }
-    var veggie2CollapseElement = document.getElementById('Veggie_2');
-    if (veggie2CollapseElement.classList.contains('show')) {
-        var veggie2Collapse = new bootstrap.Collapse(veggie2CollapseElement, {
-            toggle: false
-        });
-        veggie2Collapse.hide();
-    }
-
-
-
-    var poissonCollapseElement = document.getElementById('Poisson_1');
-    var poissonCollapse = new bootstrap.Collapse(poissonCollapseElement, {
-        toggle: false
+function hideCollapseElements(...elements) {
+    elements.forEach(elementId => {
+        const element = document.getElementById(elementId);
+        if (element.classList.contains('show')) {
+            new bootstrap.Collapse(element, { toggle: false }).hide();
+        }
     });
-    var poisson2CollapseElement = document.getElementById('Poisson_2');
-    var poisson2Collapse = new bootstrap.Collapse(poisson2CollapseElement, {
-        toggle: false
-    });
+}
 
-    if (!poissonCollapseElement.classList.contains('show')) {
-        poissonCollapse.show();
-    }
-    if (!poisson2CollapseElement.classList.contains('show')) {
-        poisson2Collapse.show();
-    }
+function showCollapseElements(...elements) {
+    elements.forEach(elementId => {
+        const element = document.getElementById(elementId);
+        if (!element.classList.contains('show')) {
+            new bootstrap.Collapse(element, { toggle: false }).show();
+        }
+    });
+}
+
+document.getElementById('Entree_Viande_btn').addEventListener('click', function() {
+    hideCollapseElements('Entree_veggie_1');
+    showCollapseElements('Entree_viande_1');
 });
 
-document.getElementById('Viande_btn').addEventListener('click', function() {
-    var poissonCollapseElement = document.getElementById('Poisson_1');
-    if (poissonCollapseElement.classList.contains('show')) {
-        var poissonCollapse = new bootstrap.Collapse(poissonCollapseElement, {
-            toggle: false
-        });
-        poissonCollapse.hide();
-    }
-    var poisson2CollapseElement = document.getElementById('Poisson_2');
-    if (poisson2CollapseElement.classList.contains('show')) {
-        var poisson2Collapse = new bootstrap.Collapse(poisson2CollapseElement, {
-            toggle: false
-        });
-        poisson2Collapse.hide();
-    }
-
-
-
-    var veggieCollapseElement = document.getElementById('Veggie_1');
-    if (veggieCollapseElement.classList.contains('show')) {
-        var veggieCollapse = new bootstrap.Collapse(veggieCollapseElement, {
-            toggle: false
-        });
-        veggieCollapse.hide();
-    }
-    var veggie2CollapseElement = document.getElementById('Veggie_2');
-    if (veggie2CollapseElement.classList.contains('show')) {
-        var veggie2Collapse = new bootstrap.Collapse(veggie2CollapseElement, {
-            toggle: false
-        });
-        veggie2Collapse.hide();
-    }
-
-
-
-    var viandeCollapseElement = document.getElementById('Viande_1');
-    var viandeCollapse = new bootstrap.Collapse(viandeCollapseElement, {
-        toggle: false
-    });
-    var viande2CollapseElement = document.getElementById('Viande_2');
-    var viande2Collapse = new bootstrap.Collapse(viande2CollapseElement, {
-        toggle: false
-    });
-
-    if (!viandeCollapseElement.classList.contains('show')) {
-        viandeCollapse.show();
-    }
-    if (!viande2CollapseElement.classList.contains('show')) {
-        viande2Collapse.show();
-    }
+document.getElementById('Entree_Veggie_btn').addEventListener('click', function() {
+    hideCollapseElements('Entree_viande_1');
+    showCollapseElements('Entree_veggie_1');
 });
 
-document.getElementById('Veggie_btn').addEventListener('click', function() {
-    var poissonCollapseElement = document.getElementById('Poisson_1');
-    if (poissonCollapseElement.classList.contains('show')) {
-        var poissonCollapse = new bootstrap.Collapse(poissonCollapseElement, {
-            toggle: false
-        });
-        poissonCollapse.hide();
-    }
-    var poisson2CollapseElement = document.getElementById('Poisson_2');
-    if (poisson2CollapseElement.classList.contains('show')) {
-        var poisson2Collapse = new bootstrap.Collapse(poisson2CollapseElement, {
-            toggle: false
-        });
-        poisson2Collapse.hide();
-    }
-
-
-
-    var viandeCollapseElement = document.getElementById('Viande_1');
-    if (viandeCollapseElement.classList.contains('show')) {
-        var viandeCollapse = new bootstrap.Collapse(viandeCollapseElement, {
-            toggle: false
-        });
-        viandeCollapse.hide();
-    }
-    var viande2CollapseElement = document.getElementById('Viande_2');
-    if (viande2CollapseElement.classList.contains('show')) {
-        var viande2Collapse = new bootstrap.Collapse(viande2CollapseElement, {
-            toggle: false
-        });
-        viande2Collapse.hide();
-    }
-
-
-
-    var veggieCollapseElement = document.getElementById('Veggie_1');
-    var veggieCollapse = new bootstrap.Collapse(veggieCollapseElement, {
-        toggle: false
-    });
-    var veggie2CollapseElement = document.getElementById('Veggie_2');
-    var veggie2Collapse = new bootstrap.Collapse(veggie2CollapseElement, {
-        toggle: false
-    });
-
-    if (!veggieCollapseElement.classList.contains('show')) {
-        veggieCollapse.show();
-    }
-    if (!veggie2CollapseElement.classList.contains('show')) {
-        veggie2Collapse.show();
-    }
+document.getElementById('Entree_All_btn').addEventListener('click', function() {
+    showCollapseElements('Entree_veggie_1', 'Entree_viande_1');
 });
 
-document.getElementById('All_btn').addEventListener('click', function() {
-    var poissonCollapseElement = document.getElementById('Poisson_1');
-    var poissonCollapse = new bootstrap.Collapse(poissonCollapseElement, {
-        toggle: false
-    });
-    var poisson2CollapseElement = document.getElementById('Poisson_2');
-    var poisson2Collapse = new bootstrap.Collapse(poisson2CollapseElement, {
-        toggle: false
-    });
+document.getElementById('Plat_Poisson_btn').addEventListener('click', function() {
+    hideCollapseElements('Plat_viande_1', 'Plat_viande_2', 'Plat_veggie_1', 'Plat_veggie_2');
+    showCollapseElements('Plat_poisson_1', 'Plat_poisson_2');
+});
 
-    if (!poissonCollapseElement.classList.contains('show')) {
-        poissonCollapse.show();
-    }
-    if (!poisson2CollapseElement.classList.contains('show')) {
-        poisson2Collapse.show();
-    }
+document.getElementById('Plat_Viande_btn').addEventListener('click', function() {
+    hideCollapseElements('Plat_poisson_1', 'Plat_poisson_2', 'Plat_veggie_1', 'Plat_veggie_2');
+    showCollapseElements('Plat_viande_1', 'Plat_viande_2');
+});
 
+document.getElementById('Plat_Veggie_btn').addEventListener('click', function() {
+    hideCollapseElements('Plat_poisson_1', 'Plat_poisson_2', 'Plat_viande_1', 'Plat_viande_2');
+    showCollapseElements('Plat_veggie_1', 'Plat_veggie_2');
+});
 
+document.getElementById('Plat_All_btn').addEventListener('click', function() {
+    showCollapseElements('Plat_poisson_1', 'Plat_poisson_2', 'Plat_viande_1', 'Plat_viande_2', 'Plat_veggie_1', 'Plat_veggie_2');
+});
 
-    var viandeCollapseElement = document.getElementById('Viande_1');
-    var viandeCollapse = new bootstrap.Collapse(viandeCollapseElement, {
-        toggle: false
-    });
-    var viande2CollapseElement = document.getElementById('Viande_2');
-    var viande2Collapse = new bootstrap.Collapse(viande2CollapseElement, {
-        toggle: false
-    });
+document.getElementById('Dessert_sucre_btn').addEventListener('click', function() {
+    hideCollapseElements('Dessert_fromage_1');
+    showCollapseElements('Dessert_sucre_1', 'Dessert_sucre_2', 'Dessert_sucre_3', 'Dessert_sucre_4');
+});
 
-    if (!viandeCollapseElement.classList.contains('show')) {
-        viandeCollapse.show();
-    }
-    if (!viande2CollapseElement.classList.contains('show')) {
-        viande2Collapse.show();
-    }
+document.getElementById('Dessert_fromage_btn').addEventListener('click', function() {
+    hideCollapseElements('Dessert_sucre_1', 'Dessert_sucre_2', 'Dessert_sucre_3', 'Dessert_sucre_4');
+    showCollapseElements('Dessert_fromage_1');
+});
 
+document.getElementById('Dessert_All_btn').addEventListener('click', function() {
+    showCollapseElements('Dessert_fromage_1', 'Dessert_sucre_1', 'Dessert_sucre_2', 'Dessert_sucre_3', 'Dessert_sucre_4');
+});
 
+document.getElementById('Boisson_sobre_btn').addEventListener('click', function() {
+    hideCollapseElements('Boisson_alcool_1', 'Boisson_alcool_2', 'Boisson_alcool_3');
+    showCollapseElements('Boisson_sobre_1', 'Boisson_sobre_2', 'Boisson_sobre_3');
+});
 
-    var veggieCollapseElement = document.getElementById('Veggie_1');
-    var veggieCollapse = new bootstrap.Collapse(veggieCollapseElement, {
-        toggle: false
-    });
-    var veggie2CollapseElement = document.getElementById('Veggie_2');
-    var veggie2Collapse = new bootstrap.Collapse(veggie2CollapseElement, {
-        toggle: false
-    });
+document.getElementById('Boisson_alcool_btn').addEventListener('click', function() {
+    hideCollapseElements('Boisson_sobre_1', 'Boisson_sobre_2', 'Boisson_sobre_3');
+    showCollapseElements('Boisson_alcool_1', 'Boisson_alcool_2', 'Boisson_alcool_3');
+});
 
-    if (!veggieCollapseElement.classList.contains('show')) {
-        veggieCollapse.show();
-    }
-    if (!veggie2CollapseElement.classList.contains('show')) {
-        veggie2Collapse.show();
-    }
+document.getElementById('Boisson_All_btn').addEventListener('click', function() {
+    showCollapseElements('Boisson_sobre_1', 'Boisson_sobre_2', 'Boisson_sobre_3', 'Boisson_alcool_1', 'Boisson_alcool_2', 'Boisson_alcool_3');
 });
 
 function showContainer(containerId) {
