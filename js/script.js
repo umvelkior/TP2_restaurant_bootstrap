@@ -1,14 +1,3 @@
-function openMenu() {
-    document.getElementById("menu").style.display = "flex";
-    document.getElementById("openbtn").style.display = "none";
-}
-
-function closeMenu() {
-    document.getElementById("menu").style.display = "none";
-    document.getElementById("openbtn").style.display = "flex";
-}
-
-
 document.getElementById('Poisson_btn').addEventListener('click', function() {
     var viandeCollapseElement = document.getElementById('Viande_1');
     if (viandeCollapseElement.classList.contains('show')) {
@@ -218,3 +207,13 @@ document.getElementById('All_btn').addEventListener('click', function() {
         veggie2Collapse.show();
     }
 });
+
+function showContainer(containerId) {
+    document.getElementById('container_Entree').classList.add('d-none');
+    document.getElementById('container_Plats').classList.add('d-none');
+    document.getElementById('container_Dessert').classList.add('d-none');
+    document.getElementById('container_Boissons').classList.add('d-none');
+
+    document.getElementById(containerId).classList.remove('d-none');
+    document.getElementById(containerId).classList.add('d-block');
+}

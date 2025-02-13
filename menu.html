@@ -53,77 +53,86 @@
     </header>
 
     <main>
-        <section class="container">
+        <section class="container-fluid">
             <nav aria-label="...">
                 <ul class="pagination pagination-lg">
                     <li class="page-item" aria-current="page">
-                        <a class="page-link" href="#">Entrées</a>
+                        <a class="page-link" href="#"  onclick="showContainer('container_Entree')">Entrées</a>
                     </li>
                     <li class="page-item">
-                        <a class="page-link" href="#">Plats</a>
+                        <a class="page-link" href="#" onclick="showContainer('container_Plats')">Plats</a>
                     </li>
                     <li class="page-item">
-                        <a class="page-link" href="#">Desserts</a>
+                        <a class="page-link" href="#" onclick="showContainer('container_Dessert')">Desserts</a>
                     </li>
                     <li class="page-item">
-                        <a class="page-link" href="#">Boissons</a>
+                        <a class="page-link" href="#" onclick="showContainer('container_Boissons')">Boissons</a>
 
                     </li>
                 </ul>
-              </nav>
-        </section>
+            </nav>
 
-        <section class="container" id="container_Entrées">
-            <p class="d-inline-flex gap-1">
-                <button class="btn btn-primary" type="button" id="All_btn">Tout voir</button>
-                <button class="btn btn-primary" type="button" id="Poisson_btn">Poissons</button>
-                <button class="btn btn-primary" type="button" id="Viande_btn">Viandes</button>
-                <button class="btn btn-primary" type="button" id="Veggie_btn">Végétariens</button>
-            </p>
-              <div class="row">
-                <div class="col-md-6 col-lg-4 mb-4 card-container">
-                    <div class="collapse multi-collapse show" id="Poisson_1">
-                        <div class="card card-body">
-                            CARD de Poisson
+            <section class="container" id="container_Entree">
+            </section>
+
+            <section class="container" id="container_Plats">
+                <p class="d-inline-flex gap-1">
+                    <button class="btn btn-primary" type="button" id="All_btn">Tout voir</button>
+                    <button class="btn btn-primary" type="button" id="Poisson_btn">Poissons</button>
+                    <button class="btn btn-primary" type="button" id="Viande_btn">Viandes</button>
+                    <button class="btn btn-primary" type="button" id="Veggie_btn">Végétariens</button>
+                </p>
+                  <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-4 card-container">
+                        <div class="collapse multi-collapse show" id="Poisson_1">
+                            <div class="card card-body">
+                                CARD de Poisson
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4 card-container">
-                    <div class="collapse multi-collapse show" id="Poisson_2">
-                        <div class="card card-body">
-                            CARD de Poisson 2
+                    <div class="col-md-6 col-lg-4 mb-4 card-container">
+                        <div class="collapse multi-collapse show" id="Poisson_2">
+                            <div class="card card-body">
+                                CARD de Poisson 2
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4 card-container"">
-                    <div class="collapse multi-collapse show" id="Viande_1">
-                        <div class="card card-body">
-                            CARD de viande
+                    <div class="col-md-6 col-lg-4 mb-4 card-container"">
+                        <div class="collapse multi-collapse show" id="Viande_1">
+                            <div class="card card-body">
+                                CARD de viande
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4 card-container">
-                    <div class="collapse multi-collapse show" id="Viande_2">
-                        <div class="card card-body">
-                        CARD de viande 2
+                    <div class="col-md-6 col-lg-4 mb-4 card-container">
+                        <div class="collapse multi-collapse show" id="Viande_2">
+                            <div class="card card-body">
+                            CARD de viande 2
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4 card-container"">
-                    <div class="collapse multi-collapse show" id="Veggie_1">
-                        <div class="card card-body">
-                            CARD de veggie 
+                    <div class="col-md-6 col-lg-4 mb-4 card-container"">
+                        <div class="collapse multi-collapse show" id="Veggie_1">
+                            <div class="card card-body">
+                                CARD de veggie 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4 card-container">
-                    <div class="collapse multi-collapse show" id="Veggie_2">
-                        <div class="card card-body">
-                        CARD de veggie 2
+                    <div class="col-md-6 col-lg-4 mb-4 card-container">
+                        <div class="collapse multi-collapse show" id="Veggie_2">
+                            <div class="card card-body">
+                            CARD de veggie 2
+                            </div>
                         </div>
                     </div>
-                </div>
-              </div>
+                  </div>
+            </section>
+
+            <section class="container" id="container_Dessert">
+            </section>
+
+            <section class="container" id="container_Boissons">
+            </section>
         </section>
     </main>
 </body>
