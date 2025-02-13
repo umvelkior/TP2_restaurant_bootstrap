@@ -73,27 +73,55 @@
               </nav>
         </section>
 
-        <section class="container">
+        <section class="container" id="container_Entrées">
             <p class="d-inline-flex gap-1">
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</button>
-                <!--<a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>-->
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
-              </p>
+                <button class="btn btn-primary" type="button" id="All_btn">Tout voir</button>
+                <button class="btn btn-primary" type="button" id="Poisson_btn">Poissons</button>
+                <button class="btn btn-primary" type="button" id="Viande_btn">Viandes</button>
+                <button class="btn btn-primary" type="button" id="Veggie_btn">Végétariens</button>
+            </p>
               <div class="row">
-                <div class="col">
-                  <div class="collapse multi-collapse show" id="multiCollapseExample1">
-                    <div class="card card-body">
-                      Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                <div class="col-md-6 col-lg-4 mb-4 card-container">
+                    <div class="collapse multi-collapse show" id="Poisson_1">
+                        <div class="card card-body">
+                            CARD de Poisson
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <div class="col">
-                  <div class="collapse multi-collapse show" id="multiCollapseExample2">
-                    <div class="card card-body">
-                      Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                <div class="col-md-6 col-lg-4 mb-4 card-container">
+                    <div class="collapse multi-collapse show" id="Poisson_2">
+                        <div class="card card-body">
+                            CARD de Poisson 2
+                        </div>
                     </div>
-                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 card-container"">
+                    <div class="collapse multi-collapse show" id="Viande_1">
+                        <div class="card card-body">
+                            CARD de viande
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 card-container">
+                    <div class="collapse multi-collapse show" id="Viande_2">
+                        <div class="card card-body">
+                        CARD de viande 2
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 card-container"">
+                    <div class="collapse multi-collapse show" id="Veggie_1">
+                        <div class="card card-body">
+                            CARD de veggie 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 card-container">
+                    <div class="collapse multi-collapse show" id="Veggie_2">
+                        <div class="card card-body">
+                        CARD de veggie 2
+                        </div>
+                    </div>
                 </div>
               </div>
         </section>
