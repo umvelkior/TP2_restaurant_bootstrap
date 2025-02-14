@@ -7,3 +7,30 @@
     max-height: 500px;
     object-fit: cover;
 }
+
+body{
+    background-color: #242424;
+}
+
+nav{
+    background-color: #242424;
+}
+
+footer{
+    background-color: #242424;
+}
+
+#titre:hover{
+    color: #FFD700;
+}
+
+.nav-lien:hover{
+    color: #FFD700;
+}
+
+.container_form{
+    padding: 10px;
+    border-color: white;
+    border-radius: 25px;
+    border-style: solid;
+}
