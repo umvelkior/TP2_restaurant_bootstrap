@@ -30,7 +30,11 @@ footer{
 
 .container_form{
     padding: 10px;
-    border-color: white;
+    border-color:#FFD700;
     border-radius: 25px;
     border-style: solid;
+}
+
+.card-container{
+    border-color: #FFD700;
 }
