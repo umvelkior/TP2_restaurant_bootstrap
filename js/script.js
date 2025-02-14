@@ -1,3 +1,4 @@
+//////////////////MENU////////////////////////////
 function hideCollapseElements(...elements) {
     elements.forEach(elementId => {
         const element = document.getElementById(elementId);
@@ -86,3 +87,6 @@ function showContainer(containerId) {
     document.getElementById(containerId).classList.remove('d-none');
     document.getElementById(containerId).classList.add('d-block');
 }
+
+//////////////////////Réservation//////////////////////////
+
